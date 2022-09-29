@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e4e9fd;
+  background-image: -webkit-linear-gradient(
+    65deg,
+    var(--teaGreen) 50%,
+    var(--otherGreen) 50%
+  );
+  min-height: 100vh;
+  font-family: "fira code", monospace;
+}
+
+:root {
+  --teaGreen: #c3f3c0;
+  --otherGreen: #edf7d2;
+  --silver: #9ca2ab;
+}
+
+h1 {
+  margin: 20px;
+  color: #00204a;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.header-box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pager {
+  padding: 10px 30px;
+  margin: 20px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.125rem;
+  background-color:rgb(122, 120, 150);
+  font-family: "fira code", monospace;
+}
+
+.pager:hover {
+  background-color:rgba(122, 119, 153, 0.75);
+}
+
+#heading {
+  background-color: var(--teaGreen);
+  text-align: center;
+}
+
+#buttonAdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  word-wrap: break-word;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.aboutItem {
+  min-height: 70px;
+  display: flex;
+  word-wrap: break-word;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked + p {
+  text-decoration: line-through;
+  text-decoration-color: var(--teaGreen);
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+.text {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+form.aboutItem {
+  text-align: center;
+  margin-right: 20px;
+}
+
+#addButton {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: var(--teaGreen);
+  color: #00204a;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#editButton {
+  min-height: 50px;
+  width: 50px;
+  border-color: transparent;
+  background-color: var(--teaGreen);
+  color: #00204a;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+#nextPageButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 var(--teaGreen);
+}
+
+input[placeholder] {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "fira code", monospace;
+  opacity: 1;
+}
+
+footer {
+  color: #00204a6f;
+  text-align: center;
+}

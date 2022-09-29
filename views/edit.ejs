@@ -1,0 +1,25 @@
+<%- include("header") -%>
+
+<div class="header-box" id="heading">
+  <h1>EDIT LIST</h1>
+  <a href="/">
+    <button href="/" class="pager">NEXT</button>
+  </a>
+</div>
+
+<div class="box">
+  <form action="/edit" method="post">
+    <% oldListItems.forEach(function(item){ %>
+
+    <div class="aboutItem">
+      <input type="text" name="addedVals" placeholder="<%=item.name%>" />
+      <button type="submit" id="editButton" name="eyeD" value="<%=item._id%>">
+        -
+      </button>
+    </div>
+    <% }) %>
+    <input type="hidden" name="list" value="<%= listTitle %>" />
+  </form>
+</div>
+
+<%- include("footer") -%>
